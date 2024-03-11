@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+     --fuenteTitulos:'Playfair Display';
+     --fuenteEnlaces:'Bebas Neue';
+}
+
+body{
+     background-color: black; 
+     color: white;}
+a{
+     color: darkgrey; 
+     text-decoration: none;
+     font-family: var(--fuenteEnlaces);
+     }
+
+a:hover{
+     
+     color: brown; 
+     font-size: large;
+     border: 2px solid brown;
+     background-color: white;
+     border-radius: 40px; 
+     background-size: cover;
+     padding: 5px;}
+.cabecera{
+     border: 5px darkgray solid;
+     background-color: black;
+      width: 100%;
+     color: white; 
+     }
+.cabecera h1{
+     text-align: center; scale: 3;
+     font-family: var(--fuenteTitulos);
+     text-shadow: 2px 1px 1px  darkgray;
+}
+
+p{
+     line-height: 2;
+     z-index: 1;
+}     
+.menuCabecera {
+     width: 100%;}
+.menuCabecera ul{
+     display: flex; 
+     justify-content: space-around; 
+     list-style-type: none;
+     margin-top: 50px;
+     white-space: nowrap;}
+#logotipo{
+     width: 50%; 
+     background-color: white;
+     transition: transform 0.3s ease;}
+#logotipo:hover{
+     transform:scale(1.1);
+     z-index: 2;
+}
+.titulo{
+     text-align: center;
+     font-size: xx-large;
+        font-family: var(--fuenteTitulos);
+        text-shadow: 2px 2px 1px  red;     
+     }
+.imagen{
+     display: flex;
+     justify-content: center;
+     }
+.texto{
+     text-align: left; 
+     margin-left: 20%;}
+.textoObra{
+     text-align: left; 
+     margin-left: 25%;}
+.textoMaterial{
+     text-align: left;
+      margin-left: 15%;
+     z-index: 1;}
+#obra{
+     width: 50%;
+     position: relative;
+     z-index: 1;
+     transition: transform 0.3s ease;}
+.imagenObra{
+     display: flex;
+     justify-content: center;
+     
+     }
+     #marmol{
+          width: 50%;
+     position: relative;
+     z-index: 1;
+     transition: transform 0.3s ease;
+     }
+     #marmol:hover{
+          transform:scale(1.05);
+     z-index: 2;
+     }
+#obra:hover{
+     transform:scale(1.1);
+     z-index: 2;}
+.footer{
+     border: 5px darkgray solid;
+     width: 100%;}
+.menuFooter{
+     width: 100%;}
+.menuFooter ul{
+     display: flex; 
+     justify-content: space-around; 
+     list-style-type: none;
+     margin-top: 30px;
+     margin-bottom: 30px;}
+     .container{
+          justify-content: center;}
+          .cuestion-text{
+               text-align: center;
+     font-size: large;
+        font-family: var(--fuenteTitulos);
+        text-shadow: 2px 2px 1px  brown;
+        
+          }
+.cuestionario{
+     margin-left: 20%;
+     text-align: left;
+}
+
+
+@media screen and (max-width:745px) {
+     a:hover{
+     
+          color: brown; 
+          font-size:small;
+          border: 2px solid brown;
+          background-color: white;
+          border-radius: 40px; 
+          background-size: cover;
+          padding: 5px;}
+.cabecera h1{
+
+width: 100%;
+scale: 1.1;
+}
+.menuCabecera ul{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 5px;
+}
+.menuCabecera li{margin:5px 5px 5px 5px;}
+.menuFooter ul{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 5px;
+}
+.menuFooter li{
+margin:5px 5px 5px 5px;
+}
+}
+          @media screen and (max-width:760px)and(min-width:745px){
+               a:hover{
+     
+                    
+                    font-size:medium;
+                    }
+     .cabecera h1{
+          
+          width: 100%;
+          scale: 1.1;
+     }
+     .menuCabecera ul{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 5px;
+}
+.menuCabecera li{margin:5px 5px 5px 5px;}
+.menuFooter ul{
+     display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 5px;
+}
+.menuFooter li{
+     margin:5px 5px 5px 5px;
+}
+     }
+     @media screen and (max-width:1150px ) and (min-width:760px){
+          .cabecera h1{
+               scale: 1.8;
+          }
+     }
+
